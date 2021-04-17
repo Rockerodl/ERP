@@ -21,7 +21,7 @@
 
                 <div class="form">
                   <!--Register form-->
-                  <form action="" class="box register-form">
+                  <form method="POST" action="SignUp.php" class="box register-form">
                     <div class="section has-text-centered">
                         <img src="assets/img/erp-logo-dark-b.png" alt="logo" width="250" height="auto">
                     </div>
@@ -31,7 +31,7 @@
                       <span class="icon is-small is-left">
                         <i class="far fa-user"></i>
                       </span>
-                      <input class="input" type="text" placeholder="ej. admin">
+                      <input class="input" type="text" placeholder="ej. admin" name="txtusuario">
                     </div>
                   </div>
                   <div class="field">
@@ -40,7 +40,7 @@
                       <span class="icon is-small is-left">
                         <i class="far fa-arrow-alt-circle-right "></i>
                       </span>
-                      <input class="input" type="password" placeholder="********">
+                      <input class="input" type="password" placeholder="********" name="txtpassword">
                     </div>
                   </div>
                   <div class="field">
@@ -49,12 +49,12 @@
                       <span class="icon is-small is-left">
                         <i class="fas fa-at"></i>
                       </span>
-                      <input class="input" type="email" placeholder="example@example.com">
+                      <input class="input" type="email" placeholder="example@example.com" name="txtcorreo">
                     </div>
                   </div>
 
                   <div class="field">
-                    <button class="button has-icon-right is-fullwidth is-centered is-link">
+                    <button class="button has-icon-right is-fullwidth is-centered is-link" type="submit">
                     Registrarse
                     </button>
                   </div>
@@ -65,7 +65,7 @@
 
 
                   <!--Login form-->
-                  <form action="" class="box login-form">
+                  <form method="POST" action="login.php" class="box login-form">
                       <div class="section has-text-centered">
                           <img src="assets/img/erp-logo-dark-b.png" alt="logo" width="250" height="auto">
                       </div>
@@ -75,7 +75,7 @@
                         <span class="icon is-small is-left">
                           <i class="far fa-user"></i>
                         </span>
-                        <input class="input" type="text" placeholder="ej. admin">
+                        <input class="input" type="text" placeholder="ej. admin" name="txtusuario">
                       </div>
                     </div>
                     <div class="field">
@@ -84,12 +84,12 @@
                         <span class="icon is-small is-left">
                           <i class="far fa-arrow-alt-circle-right "></i>
                         </span>
-                        <input class="input" type="password" placeholder="********">
+                        <input class="input" type="password" placeholder="********" name="txtpassword">
                       </div>
                     </div>
                     
                     <div class="field">
-                      <button class="button has-icon-right is-fullwidth is-centered is-link" formaction="aplication/views/home.html">
+                      <button class="button has-icon-right is-fullwidth is-centered is-link" type="submit">
                       Ingresar
                       </button>
                     </div>
